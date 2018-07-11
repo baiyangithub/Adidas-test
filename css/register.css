@@ -1,0 +1,325 @@
+.container {
+    padding-top: 80px;
+    min-height: 648px;
+    padding-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article-nav{
+    padding: 0;
+    display: block;
+    width: 100%;
+    max-width: 990px;
+    margin: 20px auto 0;
+}
+.list-inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.list-inline li {
+    display: inline-block;
+    zoom: 1;
+    font-size: 14px;
+}
+.list-inline li a {
+    font-size: 14px;
+    color: #000000;
+    line-height: 14px;
+}
+.list-inline li:first-child a .icon-login-left {
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    margin-right: 4px;
+    vertical-align: top;
+    background-position: -52px -20px;
+}
+.divider{
+    margin: 0 7px;
+    box-sizing: border-box;
+}
+.list-inline li:last-child a {
+    color: #888;
+}
+.article-step{
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article-step ul{
+    max-width: 990px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    border-bottom: 2px solid #C8CBCC;
+}
+/* 选中时的样式 */
+.article-step ul li.active{
+    color: #0286CD;
+    border-bottom: 2px solid #0286CD;
+    height: 34px;
+    margin-bottom: -2px;
+}
+.article-step ul li.active span{
+    background-color: #0286CD;
+}
+/* 正常样式 */
+.article-step ul li{
+    float: left;
+    height: 32px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #C8CBCC;
+    cursor: pointer;
+    width: 50%!important;
+    margin-right: 0;
+}
+.article-step ul li span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #C8CBCC;
+    margin-right: 6px;
+}
+/* 注册主体部分 */
+.reg-container{
+    max-width: 990px;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reg-left{
+    max-width: inherit;
+    width: 100%;
+    padding-right: 0;
+    border-right: none;
+    float: left;
+    min-height: 310px;
+}
+.login-box{
+    max-width: 355px;
+}
+.login-box h4{
+    margin-bottom: 20px;
+    padding: 30px 0 20px;
+    border-bottom: 1px dotted #EBEBEB;
+    font-size: 24px;
+    color: #000000;
+    line-height: 24px;
+}
+.login-box h4 p{
+    font-size: 14px;
+    color: #888888;
+    line-height: 14px;
+    margin-top: 12px;
+}
+.form-input {
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-input input{
+    width: 100%;
+    height: 40px;
+    line-height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C8CBCC;
+    padding: 0px 10px;
+    font-size: 14px;
+    color: #000;
+    box-sizing: border-box;
+}
+.form-input input:focus{
+    border: 1px solid #C8CBCC;
+    border-bottom: 3px solid #000;
+    padding-top: 2px;
+}
+.verification-code{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    box-sizing: border-box;
+}
+.verification-code button {
+    min-width: 100px;
+    height: 40px;
+    background-color: #000;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-top: -1px;
+}
+.next-btn{
+    position: relative;
+    width: 100%;
+    max-width: inherit;
+    margin: 20px 0 10px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px 0 4px;
+    font-size: 18px;
+    color: #FFF;
+    background: #0286CD;
+    border: 0px solid #0286CD;
+    min-width: 143px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    float: left;
+}
+.next-btn span{
+    position: relative;
+}
+.next-btn span:after {
+    position: absolute;
+    display: block;
+    content: "";
+    line-height: 1;
+    z-index: 1;
+    top: 3px;
+    right: -26px;
+    width: 17px;
+    height: 16px;
+    background: url(../images/icon.png);
+    background-position: -120px -20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out
+}
+.finish{
+    color: #000!important;
+}
+.icon-ok-login {
+    width: 20px;
+    height: 20px;
+    background-position: -360px -85px;
+    vertical-align: middle;
+}
+.login-box h5{
+    padding: 30px 0 20px;
+    color: #000000;
+    font-size: 18px!important;
+    line-height: 18px!important;
+    border-bottom: none!important;
+    margin-bottom: 0!important;
+    padding-top: 0!important;
+    font-weight: bolder!important;
+}
+.login-detail{
+    margin-bottom: 50px;
+}
+.login-detail .mb10 {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.login-detail > span{
+    font-size:14px;
+}
+.msg-block {
+    display: none;
+    font-size: 0;
+    margin-top: 4px;
+    padding-left: 10px;
+    text-align: left;
+    color: #737373;
+}
+.msg-icon {
+    display: none;
+}
+.form-input .login-clears {
+    position: absolute;
+    top: 13px;
+    transform: none;
+    right: 10px;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+.icon-clears {
+    width: 14px;
+    height: 14px;
+    background-position: -240px -20px;
+}
+.step-reg{
+    width: 100%;
+}
+.reg-subscribe{
+    margin-bottom: 20px;
+}
+.form-remember {
+    display: block;
+    line-height: 24px;
+    cursor: pointer;
+}
+.icon-checked {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-position: -432px -50px;
+}
+.icon-checked.is-active {
+    background-position: -534px -50px;
+}
+.reg-remember{
+    margin-bottom: 10px;
+}
+.reg-remember a {
+    text-decoration: underline;
+    color: #000;
+}
+.float-clearfix {
+    clear: both!important;
+}
+.login-btn .submit-btn{
+    cursor: pointer;
+    width: 100%;
+    max-width: inherit;
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px 0 4px;
+    font-size: 18px;
+    color: #FFF;
+    background: #0286CD;
+    border: 0px solid #0286CD;
+    min-width: 143px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    white-space: normal;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+.submit-btn span{
+    position: relative;
+}
+.submit-btn span:after {
+    position: absolute;
+    display: block;
+    content: "";
+    line-height: 1;
+    z-index: 1;
+    top: 4px;
+    right: -26px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon.png);
+    background-position: -120px -20px;
+    transition: all 0.3s ease-in-out;
+}

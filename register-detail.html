@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mr.Bai">
+    <meta name="keywords" content="阿迪达斯官方商城" />
+    <meta name="description" content="阿迪达斯官方商城" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://img.adidas.com.cn/images/favicon.ico" type="image/x-icon">
+    <title>阿迪达斯官网</title>
+    <link rel="stylesheet" type="text/css" href="css/currency.css" />
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 头部 -->
+        <div class="header-fix">
+            <!-- 首行超链接 -->
+            <div class="header-top">
+                <div class="header-top-container">
+                    <ul>
+					    <li>
+						    <a href="#">订单追踪</a>
+                        </li>
+                        <li class="delimiter">
+                            <span></span>
+                        </li>
+					    <li class="e-mail">
+						    <a href="">邮件订阅</a>
+                        </li>
+                        <li class="delimiter">
+                            <span></span>
+                        </li>
+					    <li>
+						    <a>
+								在线客服<i class="icon icon-service"></i>
+							</a>
+                        </li> 
+					    <li class="login-box">
+						    <a href="login.html">
+							    登录 <i class="icon icon-login"></i>
+						    </a>
+					    </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 导航栏&搜索框 -->
+            <header class="header">
+                <div class="header-contains">
+                    <div class="header-left clear">
+                        <h1 class="header-left-h1">
+                            <!-- 点击刷新回到主页面 -->
+                           <a href="index.html">
+                               <img src="https://img.adidas.com.cn/images/logo.png" class="logo" alt="">
+                           </a> 
+                        </h1>
+                    </div>
+                    <ul class="header-right">
+                        <li class="header-search">
+                            <a href="">
+                                <i class="icon icon-search"></i>
+                            </a>
+                            <input type="text" value="" placeholder="搜索">
+                        </li>
+                        <li class="header-cart">
+                            <a href="addCar.html">
+                                <i class="icon icon-cart"></i>
+                                <span id="icon-item-count"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <section class="container">
+            <article class="article-nav">
+                <!-- 注册标签栏 -->
+                <div class="register-title">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="javascript:history.go(-1)">
+                                <i class="icon icon-login-left"></i> 返回</a>
+                        </li>
+                        <li class="divider"> | </li>
+                        <li>
+                            <a href="login.html">登录 </a> |
+                            <a> 注册</a>
+                        </li>
+                        <li class="divider">/</li>
+                        <li>
+                            <a href="javascript:void(0)">注册 </a>
+                        </li>
+                    </ul>
+                </div>      
+            </article>
+            <!-- 注册步骤 -->
+            <article class="article-step">
+                <ul class="clear">
+                    <li class="finish">
+                        <i class="icon icon-ok-login"></i>
+                        验证您的手机号
+                    </li>
+                    <li class="active">
+                        <span>2</span>
+                        完善信息并注册成功
+                    </li>
+                </ul>
+            </article>
+            <!-- 注册主体 -->
+            <article class="reg-container">
+                <div class="reg-content clear">
+                    <div class="reg-left">
+                        <div class="login-box">
+                            
+                            <div id="register-first-form">
+                                <!-- 主体提示 -->
+                                <h4 class="clear" style="width: 148%;font-weight: bolder!important;">
+                                    完善你的信息
+                                    <p>亲爱的用户，建议您完善您的adiCLUB账户信息以便我们为您提供更好的服务体验。</p>
+                                </h4>
+                                <h5>账户信息</h5>
+                                <!-- 登录详细信息 -->
+                                <div class="login-detail">
+                                    <span class="mb10">用户名（可以使用手机号）</span>
+                                    <!-- 输入错误时is-error -->
+                                    <div class="form-input">
+                                        <input type="text" placeholder="" id="reguname">
+                                        <!-- 输入框右侧清空按钮 -->
+                                        <a class="login-clears e-login-clears none">
+                                            <i class="icon icon-clears"></i>
+                                        </a>
+                                        <!-- 错误提示 -->
+                                        <div class="msg-block">
+                                        <i class="icon msg-icon"></i>
+                                        <span>请输入用户名</span>
+                                        </div>
+                                    </div>
+                                    <!-- 密码 -->
+                                    <span class="mb10">密码</span>
+                                    <div class="form-input">
+                                            <input type="password" placeholder="至少8个字符，必须包含英文和数字" id="password">
+                                        <!-- 输入框右侧清空按钮 -->
+                                        <a class="login-clears e-login-clears none">
+                                            <i class="icon icon-clears"></i>
+                                        </a>
+                                        <!-- 错误提示 -->
+                                        <div class="msg-block">
+                                        <i class="icon msg-icon"></i>
+                                        <span>请输入密码</span>
+                                        </div>
+                                    </div>
+                                    <!-- 确认密码 -->
+                                    <span class="mb10">确认新密码</span>
+                                    <div class="form-input">
+                                        <input type="password" placeholder="" id="con-password">
+                                        <!-- 输入框右侧清空按钮 -->
+                                        <a class="login-clears e-login-clears none">
+                                            <i class="icon icon-clears"></i>
+                                        </a>
+                                        <!-- 错误提示 -->
+                                        <div class="msg-block">
+                                        <i class="icon msg-icon"></i>
+                                        <span>请再次输入密码</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 个人信息 -->
+                                <!-- <h5>个人信息</h5> -->
+                                <div class="step-reg">
+                                    <div class="reg-subscribe">
+                                        <label class="form-remember">
+                                            <i class="icon icon-checked is-active" id="isReceiveEmail"></i>
+                                            订阅adidas最新资讯和新品通知
+                                        </label>
+                                    </div>
+                                    <div class="reg-remember">
+                                        <label class="form-remember">
+                                            <!-- 点击时 is-active -->
+                                            <i class="icon icon-checked" id="agreement"></i>
+                                            我已阅读并同意adidas商城&nbsp;
+                                            <a>隐私声明&nbsp;</a>
+                                            和&nbsp;
+                                            <a>使用条款</a>
+                                        </label>
+                                    </div>
+                                    <div class="reg-remember">
+                                        <label class="form-remember">
+                                            <!-- 点击时 is-active -->
+                                            <i class="icon icon-checked" id="agreementClub"></i>
+                                            我已阅读并同意&nbsp;
+                                            <a>adiCLUB会员规则</a>
+                                        </label>
+                                    </div>
+                                    <!-- 提交 -->
+                                    <div class="login-btn float-clearfix" id="reg-btn">
+                                        <a class="submit-btn">
+                                            <span>提交并完成</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- 底部 -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-top-container">
+                    <ul>
+                        <li class="contacted">联系我们</li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <i class="icon icon-contact-us-service"></i>
+                                    在线客服
+                                </a>
+                            </p>
+                            <p class="remark">
+                                (仅支持中文)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <i class="icon icon-contact-us-tel"></i>
+                                    400-999-5999
+                                </a>
+                            </p>
+                            <p class="remark">
+                                (仅支持中文)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <i class="icon icon-contact-us-email"></i>
+                                    service@adidas.com
+                                </a>
+                            </p>
+                            <p class="remark">
+                                (中英文均支持)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <i class="icon icon-contact-us-email"></i>
+                                    9:00-22:00
+                                </a>
+                            </p>
+                        </li>
+                        <li class="order-tracking">
+                            <a href="#">
+                                订单追踪
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-list">
+                    <!-- 第一列 -->
+                    <ul>
+                        <li class="title">产品</li>
+                        <li>
+                            <a href="#" target="_blank">鞋类</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">服装</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">配件</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">新品上市</a>
+                        </li>
+                    </ul>
+                    <!-- 第二列 -->
+                    <ul>
+                        <li class="title">运动</li>
+                        <li>
+                            <a href="#" target="_blank">跑步</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">训练</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">足球</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">篮球</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">户外</a>
+                        </li>
+                    </ul>
+                    <!-- 第三列 -->
+                    <ul>
+                        <li class="title">
+                            <a href="#">帮助中心</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">关于员工</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">尺码表</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">adiCLUB会员</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">门店查询</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">企业社会责任</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Confirmed app</a>
+                        </li>
+                    </ul>
+                    <!-- 第四列 -->
+                    <ul>
+                        <li class="title">网站政策</li>
+                        <li>
+                            <a href="#" target="_blank">使用条款</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">隐私声明</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">物流配送规则</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">定制和印制服务条款</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">adiCLUB会员规则</a>
+                        </li>
+                    </ul>
+                    <!-- 关注我们 -->
+                    <ul class="footer-follow">
+                        <li class="title">关注我们</li>
+                        <li>
+                            <a href="#" target="_blank" title="微博">
+                                <i class="icon icon-sina"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="wechat">
+                                <i class="icon icon-wechat"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 付款方式 -->
+                    <ul class="footer-pay">
+                        <li class="title">我们接受下列付款方式：</li>
+                        <li>
+                            <i class="icon icon-pay"></i>
+                        </li>
+                        <li>
+                            <i class="icon icon-pay-1"></i>
+                        </li>
+                        <li>
+                            <i class="icon icon-pay-2"></i>
+                        </li>
+                        <li>
+                            <i class="icon icon-pay-3"></i>
+                        </li>
+                    </ul>
+                    <!-- 团购 -->
+                    <ul class="group-purchase">
+                        <li class="title">企业团购热线及邮箱：</li>
+                        <li class="title">团购热线：021-2525 6881</li>
+                        <li class="title">团购邮箱：adidas.b2b@adidas.com</li>
+                        <li class="title">（仅限采购金额10万以上）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <ul class="fb-left">
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-china"></i>
+                                <span>&nbsp;&nbsp;中国</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">隐私声明</a>
+                        </li>
+                        <li>
+                            <a href="#">使用条款</a>
+                        </li>
+                        <li>
+                            <a href="#">网站地图</a>
+                        </li>
+                    </ul>
+                    <ul class="fb-right">
+                        <li>苏ICP备14048805号-1&nbsp;
+                            <a href="#">
+                                <i class="icon icon-pol"></i>
+                            </a>
+                        </li>
+                        <li>© 2017 adidas</li>
+                        <li class="pol-last">
+                            <a href="#">
+                                <i class="icon icon-pol1"></i>
+                                &nbsp;&nbsp;苏公网安备 32059002001401号
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            $("#reg-btn").on("click",function(){
+                // alert($("#reguname").val())
+                if($("#reguname").val().length > 0 && $("#password").val().length > 0){
+                    var $username = $("#reguname").val();
+                    var $pwd = $("#password").val();
+                    // console.log($pwd);
+                    var opt = {
+                        url:"http://127.0.0.1/Adidas/data/register.php",
+                        type:"POST",
+                        data:{uname:$username,upwd:$pwd}
+                    }
+                    $.ajax(opt)
+                    .then(function(res){
+                        // console.log(res);
+                        if(res == "1"){
+                            location.href = "login.html";
+                        }else if(res == "0"){
+                            alert("注册失败");
+                        }
+                    })
+                }else{
+                    alert("账号名密码不能为空！")
+                }
+                
+            })
+            
+            // 点击同意
+            $("#agreement").on("click",function(){
+                var isActive = $("#agreement").hasClass("is-active");
+                if(!isActive){
+                    $("#agreement").addClass("is-active")
+                }else{
+                    $("#agreement").removeClass("is-active")
+                }
+                // console.log($("#agreement").hasClass("is-active"))
+            })
+            $("#agreementClub").on("click",function(){
+                var isActive = $("#agreementClub").hasClass("is-active");
+                if(!isActive){
+                    $("#agreementClub").addClass("is-active")
+                }else{
+                    $("#agreementClub").removeClass("is-active")
+                }
+            })
+            // 点击清空
+            function ClearText(main_selector){
+                this.main_ele = $(main_selector);
+                this.init();
+            }
+            ClearText.prototype = {
+                constructor:ClearText,
+                init:function(){
+                    this.main_ele.on("click",$.proxy(this.del_text,this));
+                },
+                del_text:function(event){
+                    var target = event.target || event.srcElement;
+                    // console.log(target);
+                    $(target).parent().siblings("#reguname").val("");
+                    $(target).parent().siblings("#password").val("");
+                    $(target).parent().siblings("#con-password").val("");
+                    // console.log($(target).parent().siblings("#reguname").val());
+                }
+            }
+            new ClearText(".e-login-clears");
+            // console.log($(".e-login-clears").eq(0))
+        })
+    </script>
+</body>
+</html>

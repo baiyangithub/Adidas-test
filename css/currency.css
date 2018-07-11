@@ -1,0 +1,763 @@
+/* body{overflow-x:hidden;} */
+body,h1,h3,h4,h2,h5,h6,ul,ol,p,fieldset,dd,dl,input,textarea,option,hr,td{margin:0;padding:0;}
+a{text-decoration:none; color:#333;}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+li{list-style:none;}
+img{border:none; display:inline-block;vertical-align: middle;}
+a,input{outline:none;color: white;border: none;}
+button{cursor: pointer;}
+body{font-size: 12px;font-family: "adihrg", "PingFangSC-Regular", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif; color:#000;}
+.clear:after{content:"."; display:block; clear:both;height:0; visibility:hidden;}
+.clear{zoom:1;}
+.border0{border:none;}
+html,body{height: 100%;}
+
+#wrapper{width: 100%;height: auto;}
+.icon {
+    display: inline-block;
+    background: url(../images/icon.png);
+    font-style: normal !important;
+    font-weight: 400
+}
+
+.float-clearfix {
+    clear: both !important;
+}
+
+.header-fix {
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    top: 0;
+    transition: top .3s;
+    position: fixed;
+}
+
+.header-top {
+    height: 30px;
+    position: relative;
+    width: 100%;
+    background: #000;
+}
+
+.header-top-container {
+    max-width: 1520px;
+    width: 87%;
+    min-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-top-container>ul {
+    float: right;
+    padding-right: 30px;
+}
+
+.header-top-container>ul>li {
+    float: left;
+    height: 30px;
+    padding: 0 15px;
+    position: relative;
+    line-height: 30px;
+}
+
+.header-top-container>ul>li a {
+    color: #C8CBCC;
+}
+
+.header-top-container>ul>li a .icon {
+    vertical-align: middle;
+    margin: -5px 0 0 5px;
+}
+
+.header-top-container>ul>li.delimiter {
+    padding: 0;
+    width: 0;
+}
+
+.header-top-container>ul>li.delimiter span {
+    display: block;
+    width: 1px;
+    height: 30px;
+    margin: 0;
+}
+.header-top-container ul .e-mail a{
+    color: #fff;
+}
+.header-top-container ul .e-mail:hover{
+    background: #fff;
+    display: inline-block;
+}
+.header-top-container ul .e-mail:hover a{
+    color: #000;
+}    
+.header-top-container>ul>li.delimiter span:after {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 1px;
+    border-right: 1px solid #979797;
+    top: 8px;
+    left: 0;
+    color: #979797;
+}
+
+.header-top-container>ul>li.login-box {
+    padding: 0;
+}
+
+.icon-service {
+    width: 17px;
+    height: 15px;
+    background-position: -26px -86px;
+}
+
+.icon-login {
+    width: 13px;
+    height: 16px;
+    background-position: 0px -86px;
+}
+
+:after {
+    box-sizing: border-box;
+}
+
+/* 导航栏搜索框 */
+
+.header {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background: #000000;
+    position: relative;
+    color: #ffffff;
+}
+
+.header-contains {
+    max-width: 1520px;
+    width: 87%;
+    min-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-left {
+    float: left;
+    width: 800px;
+}
+
+.header-left .header-left-h1 {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: width .5s ease .3s;
+    transition: width .5s ease .3s;
+}
+
+.header-left .header-left-h1 a .logo {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 63px;
+    height: 43px;
+    margin-top: -18px;
+}
+
+.header-left .header-list>ul {
+    float: left;
+    margin-left: 50px;
+}
+
+.header-left .header-list>ul>li {
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 15px;
+    background: #000;
+}
+
+/* .header-left .header-list > ul > .miadidas{width: 108px;} */
+
+.header-left .header-list ul li a {
+    font-weight: bold;
+    height: 50px;
+    display: block;
+}
+
+.header-left .header-list>ul .extention:hover {
+    background: #fff;
+}
+
+.header-left .header-list ul .extention:hover a {
+    color: #000;
+}
+
+.header-left .header-list>ul>li.header-delimiter {
+    width: 0;
+}
+
+.header-left .header-list>ul>li.header-delimiter span {
+    display: block;
+    width: 1px;
+    height: 30px;
+}
+
+.header-left .header-list>ul>li.header-delimiter span:after {
+    position: absolute;
+    content: '';
+    height: 18px;
+    width: 1px;
+    border-right: 1px solid #979797;
+    top: 16px;
+    color: #979797;
+}
+
+
+/* 二级菜单 */
+.sub-menu{
+    width: 100%;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: #fff;
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    display: none;
+}
+.sub-menu-ul {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 24px 10px 40px 85px;
+}
+.sub-menu li {
+    display: block;
+}
+.sub-menu-ul > li {
+    float: left;
+    margin-left: 50px;
+    min-width: 200px;
+    max-width: 200px;
+}
+.sub-menu-ul > li:first-child {
+    margin-left: 0;
+}
+.extention .sub-menu .sub-menu-ul a {
+    color: #000;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0px;
+    padding: 0;
+    font-weight: normal;
+    height: auto;
+    display:inline;
+}
+.extention .sub-menu .sub-menu-ul > li .sub-menu-title {
+    margin-bottom: 17px;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 26px;
+    display: block;
+}
+.sub-menu-ul > li .three-menu > li {
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.sub-menu .sub-menu-ul > li .three-menu > li .discountred {
+    color: #c53622;
+}
+.sub-menu-ul > li .three-menu > li a {
+    letter-spacing: 0.64px;
+}
+.sub-menu-ul > li.menu-more {
+    width: 100%;
+    margin: 10px 0 0;
+    max-width: 100%;
+}
+.sub-menu .sub-menu-ul > li.menu-more a:first-child {
+    margin-left: 0;
+}
+.sub-menu .sub-menu-ul > li.menu-more a {
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: 10px 0 0;
+    min-width: 200px;
+    max-width: 200px;
+    display: inline-block;
+    margin-left: 50px;
+    float: left;
+    border-top: 1px solid #C8CBCC;
+}
+li.nav-menu-sports .sub-menu .sub-menu-ul > li {
+    min-width: 170px;
+    width: 170px;
+}
+li.nav-menu-sports .sub-menu .sub-menu-ul > li.menu-more {
+    width: 100%;
+    margin-left: 0;
+}
+li.nav-menu-sports .sub-menu .sub-menu-ul > li.menu-more a {
+    min-width: 170px;
+    width: 170px;
+}
+.nav-menu-sports .sub-menu .sub-menu-ul > li .sub-menu-title {
+    border-bottom: 1px solid #000;
+    padding: 0 0 7px;
+    margin-bottom: 12px;
+    /* width: 188px; */
+}
+.nav-menu-sports .sub-menu .sub-menu-ul > li:nth-child(6){
+    border-left: 1px solid #C8CBCC;
+    min-height: 260px;
+    padding: 0 0 0 11px;
+}
+.icon-black-logo {
+    vertical-align: middle;
+    margin: 0 3px 0 0;
+    width: 23px;
+    height: 15px;
+    background-position: -176px -86px;
+}
+.three-menu > li.item-line span {
+    border-top: 1px solid #C8CBCC;
+    width: 30px;
+    height: 1px;
+    display: block;
+}
+.sub-menu-ul .discountred p{
+    color: #c53622;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0px;
+    padding: 0;
+    font-weight: normal;
+    height: auto;
+    display: inline;
+    cursor: pointer;
+}
+.icon-black-terrex {
+    width: 103px;
+    height: 18px;
+    background-position: 0 -550px;
+    vertical-align: bottom;
+}
+.nav-menu-brand .sub-menu .sub-menu-ul > li:nth-child(5){
+    border-left: 1px solid #C8CBCC;
+    min-height: 260px;
+    padding: 0 0 0 11px;
+}
+.icon-clover-logo {
+    width: 24px;
+    height: 24px;
+    background-position: -124px -188px;
+    vertical-align: middle;
+    margin: -4px 3px 0 0;
+}
+.icon-personalise {
+    width: 16px;
+    height: 16px;
+    background-position: -99px -190px;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+.sub-menu .sub-menu-ul > li.vertical-line {
+    border-left: 1px solid #C8CBCC;
+    min-height: 260px;
+    padding: 0 0 0 11px;
+}
+
+
+
+
+/* 搜索框 */
+.header-right {
+    float: right;
+    margin: 0;
+    height: 50px;
+}
+
+.header-right .header-search {
+    width: 150px;
+    float: left;
+}
+
+.header-right .header-search input {
+    width: 118px;
+    height: 32px;
+    line-height: 16px;
+    margin-top: 9px;
+    color: #333;
+}
+
+.icon-search {
+    width: 16px;
+    height: 16px;
+    background-position: -360px -20px;
+}
+
+.header-right .header-search>a .icon {
+    vertical-align: middle;
+    margin: 8px 0 0 8px;
+}
+
+.header-right .header-search a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+    margin-top: 9px;
+    background: #fff;
+}
+
+.header-right .header-cart {
+    width: 56px;
+    height: 50px;
+    float: left;
+    margin-left: 1px;
+    position: relative;
+    background: #0287CD;
+    margin-right: 28px;
+}
+
+.header-right .header-cart>a {
+    display: block;
+    width: 56px;
+    height: 50px;
+}
+
+.header-right .header-cart>a .icon {
+    vertical-align: middle;
+    margin: 14px 0 0 19px;
+}
+
+.icon-cart {
+    width: 18px;
+    height: 22px;
+    background-position: -334px -190px;
+}
+
+.header-right>li.header-cart>a span {
+    display: block;
+    color: #0287CD;
+    font-size: 12px;
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    top: 20px;
+    left: 19px;
+    text-align: center;
+}
+
+/* 写JS时要将display:block;改成display:none; */
+
+
+
+
+/* 页脚 */
+
+.footer {
+    padding: 0;
+    width: 100%
+}
+
+/* 页脚顶部 */
+
+.footer-top {
+    background: #000;
+    height: 90px;
+    width: 100%;
+}
+
+.footer-top-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.footer-top-container ul li {
+    height: 90px;
+    float: left;
+    color: #fff;
+    margin-right: 50px;
+    padding: 32px 0 0 0;
+}
+
+.footer-top-container ul li.contacted {
+    font-size: 16px;
+    line-height: 82px;
+    margin-right: 66px;
+    padding: 0;
+}
+
+.footer-top-container ul li p .icon {
+    margin: -2px 11px 0 0px;
+}
+
+.footer-top-container ul li p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.icon-contact-us-service {
+    width: 17px;
+    height: 17px;
+    background-position: -400px -86px;
+}
+
+.footer-top-container li .remark {
+    font-size: 12px;
+    color: #888;
+    padding: 0 0 0 30px;
+}
+
+.icon-contact-us-tel {
+    width: 16px;
+    height: 16px;
+    background-position: -74px -86px;
+}
+
+.icon-contact-us-email {
+    width: 16px;
+    height: 16px;
+    background-position: -96px -84px;
+}
+
+.icon-contact-us-time {
+    width: 16px;
+    height: 16px;
+    background-position: 0px -112px;
+}
+
+.footer-top-container ul li.order-tracking {
+    font-size: 16px;
+    line-height: 82px;
+    margin: 0 54 0 0;
+    padding: 0;
+    float: right;
+}
+
+/* 页脚中部列表 */
+
+.footer-middle {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.footer-list {
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.footer-list ul {
+    float: left;
+    text-align: left;
+    margin-right: 100px;
+    margin: 0;
+    width: 210px;
+    padding: 0 10px 0 0;
+}
+
+.footer-list ul li {
+    margin-bottom: 13px;
+    color: #000;
+}
+
+.footer-list ul li.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-list ul li>a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
+
+.footer-list ul.footer-follow {
+    margin: 0;
+    width: 100px;
+    padding: 0;
+}
+
+.footer-list ul.footer-follow li.title {
+    width: 100%;
+    float: none;
+    margin: 0 0 13px;
+}
+
+.footer-list ul.footer-follow li {
+    position: relative;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.icon-sina {
+    width: 30px;
+    height: 24px;
+    background-position: -130px -154px;
+}
+
+.icon-wechat {
+    width: 30px;
+    height: 24px;
+    background-position: -270px -154px;
+}
+
+.footer-list ul.footer-pay {
+    width: 100%;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.footer-list ul.footer-pay li {
+    float: left;
+    margin: 0 10px 0 0;
+    height: 24px;
+    vertical-align: bottom;
+}
+
+.footer-list ul.footer-pay li.title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.icon-pay {
+    height: 24px;
+    width: 72px;
+    background-position: -614px -343px;
+}
+
+.icon-pay-1 {
+    height: 24px;
+    width: 108px;
+    background-position: -695px -343px;
+}
+
+.icon-pay-2 {
+    height: 24px;
+    width: 100px;
+    background-position: -809px -343px;
+}
+
+.icon-pay-3 {
+    height: 24px;
+    width: 82px;
+    background-position: -917px -343px;
+}
+
+.footer-list ul.group-purchase {
+    padding-top: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-list ul.group-purchase li.title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: 0 20px 0 0;
+    float: left;
+}
+
+.footer-bottom {
+    background: #000;
+    height: 40px;
+}
+
+.footer-bottom>div {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.footer-bottom .fb-left {
+    float: left;
+    padding: 0;
+}
+
+.footer-bottom .fb-left li {
+    margin-right: 25px;
+    float: left;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 12px;
+    color: #D0D0CF;
+    letter-spacing: 0;
+}
+
+.footer-bottom .fb-left li a {
+    color: #D0D0CF;
+}
+
+.footer-bottom .fb-left li .icon {
+    vertical-align: middle;
+    margin: -4px 0px 0 0;
+}
+
+.icon-china {
+    width: 14px;
+    height: 12px;
+    background-position: -49px -190px;
+}
+
+.footer-bottom .fb-right {
+    float: right;
+    margin: 0 40px 0 0;
+}
+
+.footer-bottom .fb-right li {
+    float: left;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 12px;
+    color: #D0D0CF;
+    letter-spacing: 0;
+    margin-right: 15px;
+}
+
+.footer-bottom .fb-right li .icon {
+    vertical-align: middle;
+    margin: -4px 0px 0 1px;
+}
+
+.icon-pol {
+    width: 16px;
+    height: 16px;
+    background-position: -23px -190px;
+}
+
+.footer-bottom .fb-right li.pol-last {
+    margin: 0;
+}
+
+.footer-bottom .fb-right li.pol-last .icon {
+    vertical-align: center;
+    margin: -4px 0 0 1px;
+}
+
+.icon-pol1 {
+    width: 14px;
+    height: 16px;
+    background-position: 0px -190px;
+}
+
+.footer-bottom .fb-right li a {
+    color: #D0D0CF;
+}

@@ -1,0 +1,525 @@
+/* 外部广告栏 */
+.article {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+.article-top {
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    background: #333;
+    height: 16px;
+    text-align: center;
+    padding: 7px 0;
+    overflow: hidden;
+}
+.article-top .article-top-box {
+    position: relative;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+.article-top .article-top-box .article-top-scroll {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    clear: both !important;
+}
+.article-top .article-top-box .article-top-scroll .scroller-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.article-top .article-top-box .article-top-scroll .scroller-wrap>ul {
+    list-style: none;
+    position: relative;
+}
+
+/* 更改此处字体大小 可以实现轮播隐藏功能 */
+.article-top .article-top-box .article-top-scroll .scroller-wrap ul li {
+    text-align: center;
+    font-size: 12px;
+}
+.article-top .article-top-box .article-top-scroll .scroller-wrap ul li a {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 16px;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* 点击删除按钮 */
+.article-top .article-top-box .icon-article-close {
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-position: -140px -16px;
+    cursor: pointer;
+    padding: 4px;
+}
+/* 轮播图 */
+.article-banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    /* margin-top: 80px; */
+}
+.scroll {
+    position: relative;
+    clear: both !important;
+}
+.scroll .article-banner-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 567px;
+    background: white;
+}
+.scroll .article-banner-wrapper .article-banner-item {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.scroll .article-banner-wrapper .article-banner-item:nth-child(1){
+    z-index: 1;
+}
+/* .scroll .article-banner-wrapper a img{width: 99.9%;height: auto;float: right;}  */
+.scroll .article-banner-wrapper a img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+/* 分页按钮 */
+.scroll .article-banner-pagination {
+    right: auto !important;
+    bottom: 20px;
+    z-index: 10;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    letter-spacing: normal;
+    font-size: 0;
+    position: absolute;
+    text-align: center;
+    width: 144px;
+    left: 50%;
+    margin-left: -72px;
+}
+/* 分页按钮 */
+.scroll .article-banner-pagination a {
+    width: 24px;
+    height: 5px;
+    background: #C8CBCC;
+    border: 1px solid #EEEEEE;
+    margin: 0 4px;
+    margin-bottom: -1px;
+    border-radius: 0px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -1000px;
+}
+.scroll .article-banner-pagination a.is-active {  
+    background: #000;
+}
+
+/* 上一张按钮 */
+
+.scroll .article-button-prev {
+    left: 18%;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 55px 16px;
+    position: absolute;
+    top: 50%;
+    margin-top: -75px;
+    z-index: 15;
+    text-align: center;
+}
+
+.scroll .article-button-prev a {
+    text-indent: -9999px;
+    color: #444;
+    box-sizing: border-box;
+}
+
+.article-banner-container .scroll .article-button-prev a i {
+    background-position: -568px -50px;
+}
+
+.scroll .article-button-prev a i {
+    display: inline-block;
+    background: url(../images/icon.png);
+    width: 42px;
+    height: 76px;
+}
+
+/* .scroll .article-button-prev:hover a i{display: inline-block;background: url(../images/icon.png);width: 0;height: 454px;} */
+
+/* 下一张按钮 */
+
+.scroll .article-button-next {
+    right: 18%;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 55px 16px;
+    position: absolute;
+    top: 50%;
+    margin-top: -75px;
+    z-index: 15;
+    text-align: center;
+}
+
+.scroll .article-button-next a {
+    text-indent: -9999px;
+    color: #444;
+    box-sizing: border-box;
+}
+
+.article-banner-container .scroll .article-button-next a i {
+    background-position: -620px -50px;
+}
+
+.scroll .article-button-next a i {
+    display: inline-block;
+    background: url(../images/icon.png);
+    width: 42px;
+    height: 76px;
+}
+
+/* 热点框 */
+
+.article-hot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.article-hot .article-hot-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px 10px;
+    height: 766px;
+}
+
+.article-hot .article-hot-main .article-hot-main-item {
+    text-align: center;
+    padding: 0 5px 30px;
+    margin-bottom: 28px;
+    float: left;
+}
+.article-hot .article-hot-main .article-hot-main-item:hover{
+    background: none;
+    box-shadow: 1px 2px 5px 0 rgba(136, 136, 136, 0.5);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* .col-10-5{width:49.8138%}
+.col-xs-10-10{width:99.6276%} */
+
+.article-hot .article-hot-main .article-hot-main-item a img {
+    width: 100%;
+    height: auto;
+}
+
+.article-hot .article-hot-main .article-hot-main-item a h3 {
+    font-size: 18px;
+    color: #000000;
+    line-height: 20px;
+    padding: 16px 0 8px;
+    font-weight: bold;
+}
+
+.article-hot .article-hot-main .article-hot-main-item a p {
+    font-size: 16px;
+    color: #0287CD;
+    line-height: 18px;
+}
+
+/* 猜你喜欢 */
+
+.guess-like {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.guess-like .guess-like-main {
+    margin-bottom: 40px;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.guess-like h3 {
+    font-size: 30px;
+    color: #000;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.guess-like-container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.guess-like-wrapper {
+    margin: 0;
+    position: relative;
+    height: 340px;
+}
+
+.guess-like-wrapper .swiper-slide {
+    max-width: 23.9%;
+    min-height: 340px;
+    padding: 0 5px;
+    width: 25%;
+    z-index: 4;
+    float: left;
+}
+.guess-like-wrapper .swiper-slide .thumbnail {
+    position: relative;
+    z-index: 4;
+    padding: 0;
+    background: #fff;
+}
+
+
+.guess-like-wrapper .swiper-slide .thumbnail:hover  {
+    background: none;
+    box-shadow: 1px 2px 5px 0 rgba(136, 136, 136, 0.5);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+.guess-like-wrapper .swiper-slide .thumbnail>a {
+    position: relative;
+    padding: 0;
+    display: block;
+    color: #000;
+}
+
+.guess-like-wrapper .swiper-slide .thumbnail img {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.guess-like-wrapper .swiper-slide .tag-new {
+    width: 46px;
+    position: absolute;
+    top: 30px;
+    height: 20px;
+    background: #56a76c
+}
+
+.guess-like-wrapper .swiper-slide .tag-new span {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: default;
+    display: block;
+}
+
+.guess-like-wrapper .swiper-slide .goods-box {
+    padding: 10px 5px 17px;
+}
+
+.guess-like-wrapper .swiper-slide .goods-box .goods-title {
+    font-size: 12px;
+    min-height: 32px;
+    max-height: 32px;
+    line-height: 16px;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #000;
+}
+
+.guess-like-wrapper .swiper-slide .goods-box .goods-title:hover {
+    color: #337ab7;
+}
+
+.guess-like-wrapper .swiper-slide .goods-box .goods-bottom {
+    padding-top: 12px;
+    line-height: 14px;
+}
+
+.guess-like-wrapper .swiper-slide .goods-box .goods-bottom .goods-price {
+    color: #000;
+    font-size: 14px;
+}
+
+.swiper-pagination {
+    margin-bottom: 30px;
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    z-index: 6;
+    bottom: 2px;
+    width: 100%;
+    left: 0;
+    height: 4px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 4px;
+    display: inline-block;
+    background: #C8CBCC;
+    margin: 0 5px;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -9000px;
+    opacity: 1;
+    border-radius: 0;
+}
+
+/* .guess-like-wrapper .swiper-button-prev {left: 5px;background-position: -216px -50px;} */
+
+.swiper-button-prev {
+    padding: 0;
+    margin: 0;
+    width: 26px;
+    left: 4px;
+    height: 26px;
+    top: 102px;
+    background: url(../images/icon.png);
+    position: absolute;
+    z-index: 9;
+}
+
+.swiper-button-disabled {
+    background-position: -360px -50px;
+}
+
+.swiper-button-next {
+    padding: 0;
+    margin: 0;
+    width: 26px;
+    height: 26px;
+    top: 102px;
+    background: url(../images/icon.png);
+    position: absolute;
+    right: 8px;
+    background-position: -252px -50px;
+    z-index: 9;
+}
+
+/* 本周热卖 */
+
+.guess-like-wrapper .swiper-slide .tag-new-blue {
+    position: absolute;
+    top: 30px;
+    /* left: 5px; */
+    height: 20px;
+    background: #0286cd;
+    
+}
+
+.guess-like-wrapper .swiper-slide .tag-new-blue span {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: default;
+    display: block;
+    padding: 0 10px;
+}
+
+
+/* 页脚cookie提示 */
+
+.banner-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 11;
+}
+
+.banner-bottom-content {
+    height: 60px;
+    position: relative;
+}
+
+.banner-bottom-content .banner-close {
+    position: absolute;
+    top: 0px;
+    left: 85%;
+    width: 44px;
+    z-index: 1;
+}
+
+.banner-bottom-content>a {
+    display: block;
+    height: 60px;
+}
+
+.icon-banner-close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-position: -140px -16px;
+    cursor: pointer;
+    padding: 4px;
+    margin-top: -11px;
+}
+
+.banner-bottom-content .banner-bottom-main {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-bottom-content .banner-bottom-main p {
+    font-size: 12px;
+    line-height: 60px;
+    width: 100%;
+}
+
+.banner-bottom-content .banner-bottom-main p a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+
